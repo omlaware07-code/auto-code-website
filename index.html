@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Code Typing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>⚡ Auto Code Typing</h1>
+
+        <div class="editor">
+            <div class="editor-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="filename">script.js</span>
+            </div>
+
+            <pre id="code"></pre>
+        </div>
+
+        <div class="buttons">
+            <button onclick="startTyping()">▶ Start</button>
+            <button onclick="pauseTyping()">⏸ Pause</button>
+            <button onclick="resetTyping()">↻ Reset</button>
+        </div>
+
+        <div class="speed">
+            <label>Typing Speed:</label>
+            <input type="range" id="speed" min="10" max="200" value="60">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
