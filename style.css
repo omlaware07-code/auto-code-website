@@ -77,17 +77,20 @@ h1 {
     overflow: auto;
 }
 
-#code::after {
-    content: " ";
-    border-right: 2px solid #ffffff;
-    animation: blink 0.8s infinite;
+#cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background: #ffffff;
+    vertical-align: text-bottom;
+    margin-left: 1px;
+    animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
     0%, 50% {
         opacity: 1;
     }
-
     51%, 100% {
         opacity: 0;
     }
